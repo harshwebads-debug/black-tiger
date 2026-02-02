@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Tiger Plywood | Strongest Friend</title>
+
+    <!-- 1. Google Fonts: 'Montserrat' (Premium & Stylish) + 'Manrope' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- 2. Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 3. FontAwesome 6 (Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- 4. AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <!-- 1. SLEEK TOP BAR -->
+    <div class="top-bar">
+        <div class="container-fluid px-5 d-flex justify-content-between align-items-center">
+            <div class="contact-info">
+                <span class="me-4"><i class="fa-solid fa-phone"></i> +91 98765 43210</span>
+                <span><i class="fa-solid fa-envelope"></i> sales@blacktiger.com</span>
+            </div>
+            <div class="social-icons d-none d-lg-block">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. POWER NAVBAR -->
+    <div class="sticky-wrapper">
+        <nav class="navbar navbar-expand-lg" id="mainNavbar">
+            <div class="navbar-container">
+
+                <!-- LEFT: LOGO -->
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo/logo.png" alt="Black Tiger Plywood" class="logo-img">
+                </a>
+
+                <!-- RIGHT: DESKTOP MENU & CTA -->
+                <div class="collapse navbar-collapse" id="navbarDesktop">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button">Products</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Premium Plywood</a></li>
+                                <li><a class="dropdown-item" href="#">Block Boards</a></li>
+                                <li><a class="dropdown-item" href="#">Flush Doors</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Quality</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- RIGHT: CLEAN CTA BUTTON -->
+                <div class="d-none d-lg-block ms-4">
+                    <a href="#" class="btn-primary-custom">
+                        Get Quote <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+
+                <!-- RIGHT: HAMBURGER (Mobile Only) -->
+                <button class="custom-toggler" type="button" onclick="toggleMenu()" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+
+            </div>
+        </nav>
+    </div>
+
+    <!-- CUSTOM FULLSCREEN MOBILE OVERLAY -->
+    <div id="mobileOverlay" class="custom-mobile-menu">
+        <button class="close-menu-btn" onclick="toggleMenu()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <span style="display:none"></span>
+
+        <a href="#" class="mobile-link active-page">Home</a>
+        <a href="#" class="mobile-link">About Us</a>
+        <a href="#" class="mobile-link">Our Products</a>
+        <a href="#" class="mobile-link">Quality</a>
+        <a href="#" class="mobile-link">Contact</a>
+
+        <div class="mt-5 mobile-link">
+            <a href="#" class="btn-primary-custom border-white">
+                Get a Quote
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- HERO SECTION START -->
+    <section class="bt-modern-section">
+
+        <!-- SLIDE 1 -->
+        <div class="bt-modern-slide bt-mod-active" data-index="0">
+            <!-- Main Image (Full Cover) -->
+            <div class="bt-modern-img-container">
+                <img src="assets/images/banners/home-ban-1.jpg" alt="Slide 1" class="bt-modern-main-img">
+            </div>
+
+            <!-- Gradient Overlay -->
+            <div class="bt-modern-overlay"></div>
+
+            <!-- Content -->
+            <div class="bt-modern-content">
+                <div class="bt-modern-text-wrapper">
+                    <span class="bt-modern-tag">Premium Quality</span>
+                    <h1 class="bt-modern-title">
+                        Master of<br><span>Interiors</span>
+                    </h1>
+                    <p class="bt-modern-desc">
+                        Transform your living space with our premium grade precision-cut plywood sheets. Engineered for
+                        elegance and strength.
+                    </p>
+                    <a href="#" class="bt-modern-btn">Explore Collection</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="bt-modern-slide" data-index="1">
+            <div class="bt-modern-img-container">
+                <img src="assets/images/banners/home-ban-2.jpg"
+                    alt="Slide 2" class="bt-modern-main-img">
+            </div>
+            <div class="bt-modern-overlay"></div>
+
+            <div class="bt-modern-content">
+                <div class="bt-modern-text-wrapper">
+                    <span class="bt-modern-tag">Construction King</span>
+                    <h1 class="bt-modern-title">
+                        Built to<br><span>Last Forever</span>
+                    </h1>
+                    <p class="bt-modern-desc">
+                        Our shuttering plywood offers 30+ repetitions. The ultimate choice for high-rise buildings and
+                        heavy infrastructure.
+                    </p>
+                    <a href="#" class="bt-modern-btn">View Tech Specs</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 3 -->
+        <div class="bt-modern-slide" data-index="2">
+            <div class="bt-modern-img-container">
+                <img src="assets/images/banners/home-ban-3.jpg"
+                    alt="Slide 3" class="bt-modern-main-img">
+            </div>
+            <div class="bt-modern-overlay"></div>
+
+            <div class="bt-modern-content">
+                <div class="bt-modern-text-wrapper">
+                    <span class="bt-modern-tag">Waterproof</span>
+                    <h1 class="bt-modern-title">
+                        Marine<br><span>Grade BWP</span>
+                    </h1>
+                    <p class="bt-modern-desc">
+                        710 Certified Marine Plywood. Perfect for kitchens, bathrooms, and areas exposed to moisture.
+                        100% Termite Proof.
+                    </p>
+                    <a href="#" class="bt-modern-btn">Enquire Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- THUMBNAILS NAV -->
+        <div class="bt-modern-thumbs">
+            <div class="bt-modern-thumb-item bt-mod-active" onclick="btModManualChange(0)">
+                <img src="assets/images/banners/home-ban-1.jpg"
+                    alt="Thumb 1">
+            </div>
+            <div class="bt-modern-thumb-item" onclick="btModManualChange(1)">
+                <img src="assets/images/banners/home-ban-2.jpg"
+                    alt="Thumb 2">
+            </div>
+            <div class="bt-modern-thumb-item" onclick="btModManualChange(2)">
+                <img src="assets/images/banners/home-ban-3.jpg"
+                    alt="Thumb 3">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CUSTOM SCRIPT (Unique Names) -->
+    <script>
+        let btModCurrentSlide = 0;
+        const btModSlides = document.querySelectorAll('.bt-modern-slide');
+        const btModThumbs = document.querySelectorAll('.bt-modern-thumb-item');
+        const btModTotal = btModSlides.length;
+        let btModInterval;
+
+        function btModGoTo(index) {
+            btModSlides.forEach(s => s.classList.remove('bt-mod-active'));
+            btModThumbs.forEach(t => t.classList.remove('bt-mod-active'));
+
+            btModSlides[index].classList.add('bt-mod-active');
+            btModThumbs[index].classList.add('bt-mod-active');
+
+            btModCurrentSlide = index;
+        }
+
+        function btModNext() {
+            let next = (btModCurrentSlide + 1) % btModTotal;
+            btModGoTo(next);
+        }
+
+        function btModManualChange(index) {
+            clearInterval(btModInterval);
+            btModGoTo(index);
+            btModStartAuto();
+        }
+
+        function btModStartAuto() {
+            btModInterval = setInterval(btModNext, 5000);
+        }
+
+        btModStartAuto();
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ABOUT SECTION START (Unique ID and Classes applied) -->
+    <section class="bt-about-section-container" id="bt_about_section">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left Side: Image -->
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="bt-about-image-wrapper">
+                        <!-- Using a generic plywood/carpentry image -->
+                        <img src="assets/images/about-us/abt-img.jpeg"
+                            alt="Black Tiger Quality" class="bt-about-main-image">
+
+                        <!-- Experience Badge -->
+                        <div class="bt-about-exp-badge">
+                            <h3>25+</h3>
+                            <span>Years of<br>Trust</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Content -->
+                <div class="col-lg-6 ps-lg-5" data-aos="fade-left">
+                    <span class="bt-about-subtitle-text">// WHO WE ARE</span>
+                    <h2 class="bt-about-title-main">WE DON'T JUST MAKE PLYWOOD, WE BUILD <span
+                            style="color: var(--color-red);">TRUST.</span></h2>
+                    <p class="bt-about-description-text">
+                        At Black Tiger, we believe that strength lies in the core. Our plywood is engineered using
+                        state-of-the-art technology and premium timber to ensure your furniture lasts a lifetime.
+                        Whether it's structural integrity or aesthetic finish, we deliver nothing but the best.
+                    </p>
+
+                    <!-- Features List with Unique Classes -->
+                    <div class="bt-about-feature-row">
+                        <div class="bt-about-icon-circle">
+                            <i class="fa-solid fa-shield-virus"></i>
+                        </div>
+                        <div class="bt-about-feature-details">
+                            <h5>100% Termite & Borer Proof</h5>
+                            <p>Chemically treated to withstand attacks from pests, ensuring longevity.</p>
+                        </div>
+                    </div>
+
+                    <div class="bt-about-feature-row">
+                        <div class="bt-about-icon-circle">
+                            <i class="fa-solid fa-droplet"></i>
+                        </div>
+                        <div class="bt-about-feature-details">
+                            <h5>Boiling Water Proof (BWP)</h5>
+                            <p>Designed to resist moisture and high humidity conditions effectively.</p>
+                        </div>
+                    </div>
+
+                    <div class="bt-about-feature-row">
+                        <div class="bt-about-icon-circle">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <div class="bt-about-feature-details">
+                            <h5>High Density Core</h5>
+                            <p>No gaps, no overlaps. Just solid strength in every layer.</p>
+                        </div>
+                    </div>
+
+                    <a href="#" class="bt-about-cta-btn">
+                        Read Our Story <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT SECTION END -->
+
+
+
+
+
+
+
+
+    <!-- PRODUCTS SECTION START -->
+    <!-- <section class="bt-prod-section" id="bt_products_section">
+        <div class="container">
+
+   
+            <div class="bt-prod-header" data-aos="fade-up">
+                <span class="bt-prod-subtitle">// What We Craft</span>
+                <h2 class="bt-prod-title">Our Premium <span>Products</span></h2>
+            </div>
+
+            <div class="row g-4">
+
+              
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bt-prod-card">
+                        <div class="bt-prod-action"><i class="fa-solid fa-arrow-right-long"></i></div>
+                        <span class="bt-prod-number">01</span>
+                        <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800&auto=format&fit=crop"
+                            alt="Premium Plywood" class="bt-prod-img">
+                        <div class="bt-prod-content">
+                            <h3 class="bt-prod-name">Premium Plywood</h3>
+                            <p class="bt-prod-desc">MR & BWR Grade plywood engineered for superior strength and
+                                durability.</p>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bt-prod-card">
+                        <div class="bt-prod-action"><i class="fa-solid fa-arrow-right-long"></i></div>
+                        <span class="bt-prod-number">02</span>
+                        <img src="https://www.duroply.in/blog/wp-content/uploads/2022/09/Duroply-Feature-Images-for-blogs-1024x576.jpg"
+                            alt="Block Boards" class="bt-prod-img">
+                        <div class="bt-prod-content">
+                            <h3 class="bt-prod-name">Block Boards</h3>
+                            <p class="bt-prod-desc">High-density pine wood filled boards for furniture that stays
+                                straight.</p>
+                        </div>
+                    </div>
+                </div>
+
+            
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bt-prod-card">
+                        <div class="bt-prod-action"><i class="fa-solid fa-arrow-right-long"></i></div>
+                        <span class="bt-prod-number">03</span>
+                        <img src="https://www.greenply.com:5001/originalfile1744624976819-9545.jpg" alt="Flush Doors"
+                            class="bt-prod-img">
+                        <div class="bt-prod-content">
+                            <h3 class="bt-prod-name">Flush Doors</h3>
+                            <p class="bt-prod-desc">Elegant and sturdy doors available in various veneers and laminates.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+             
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bt-prod-card">
+                        <div class="bt-prod-action"><i class="fa-solid fa-arrow-right-long"></i></div>
+                        <span class="bt-prod-number">04</span>
+                        <img src="https://www.mikasaply.com/blog/wp-content/uploads/2024/11/marine-plywood-for-bathrooms-1024x478.png"
+                            alt="Marine Plywood" class="bt-prod-img">
+                        <div class="bt-prod-content">
+                            <h3 class="bt-prod-name">Marine Plywood</h3>
+                            <p class="bt-prod-desc">710 Grade waterproof plywood perfect for kitchens and bathrooms.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="bt-prod-card">
+                        <div class="bt-prod-action"><i class="fa-solid fa-arrow-right-long"></i></div>
+                        <span class="bt-prod-number">05</span>
+                        <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdavm6uLMCP7YFnlLZfQ8ct7up1o1YumeN1R2xWcWN4lfQ8pNxWCQh086-ua-N1vq-hPbNA3sm3lTntLLYdWjVooCFqUXaTI2No8Kx704UhryZYe-gvpq2x3-wJEwNnuu56GXa0htB8Mmjhs0TNgt-yg2be?key=hUscEnKQNLSFkrlycZ7p7A"
+                            alt="Flexi Ply" class="bt-prod-img">
+                        <div class="bt-prod-content">
+                            <h3 class="bt-prod-name">Flexi Plywood</h3>
+                            <p class="bt-prod-desc">Flexible plywood for curved furniture designs and artistic
+                                interiors.</p>
+                        </div>
+                    </div>
+                </div>
+
+        
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="bt-prod-card">
+                        <div class="bt-prod-action"><i class="fa-solid fa-arrow-right-long"></i></div>
+                        <span class="bt-prod-number">06</span>
+                        <img src="https://www.kridhalam.com/wp-content/uploads/2024/03/shuttering-ply-1.jpg"
+                            alt="Shuttering Ply" class="bt-prod-img">
+                        <div class="bt-prod-content">
+                            <h3 class="bt-prod-name">Shuttering Ply</h3>
+                            <p class="bt-prod-desc">Heavy-duty film faced plywood for construction and concrete work.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+           
+            <div class="bt-prod-footer" data-aos="fade-up">
+                <a href="#" class="bt-prod-view-btn">Download Brochure</a>
+            </div>
+
+        </div>
+    </section> -->
+    <!-- PRODUCTS SECTION END -->
+
+
+
+    <!-- SINGLE PRODUCT SECTION START -->
+    <section class="bt-shut-section" id="bt_shuttering_ply">
+        <div class="bt-shut-overlay"></div>
+
+        <div class="container bt-shut-container">
+            <div class="row align-items-center">
+
+                <!-- Left Column: Image -->
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="bt-shut-img-wrapper">
+                        <div class="bt-shut-circle"></div>
+                        <!-- Placeholder for Shuttering Ply Image (Red/Dark Brown Film Face) -->
+                        <img src="assets/images/product/freepik__a-clean-modern-product-section-showcase-image-for-__23824.jpeg"
+                            alt="Shuttering Plywood" class="bt-shut-product-img">
+                    </div>
+                </div>
+
+                <!-- Right Column: Content -->
+                <div class="col-lg-6" data-aos="fade-left">
+                    <span class="bt-shut-badge">Industrial Grade</span>
+                    <h2 class="bt-shut-title">
+                        Film Faced <span>Shuttering Ply</span>
+                    </h2>
+                    <p class="bt-shut-desc">
+                        Engineered for heavy construction sites. Our high-density shuttering plywood offers superior
+                        repetition, mirror-like finish, and extreme load-bearing capacity. Built to withstand the
+                        toughest concrete pouring conditions.
+                    </p>
+
+                    <!-- Technical Specs Grid -->
+                    <div class="bt-shut-specs">
+
+                        <div class="bt-shut-spec-item">
+                            <div class="bt-shut-icon"><i class="fa-solid fa-rotate"></i></div>
+                            <div class="bt-shut-spec-text">
+                                <h5>High Repetition</h5>
+                                <p>Re-use up to 30 times</p>
+                            </div>
+                        </div>
+
+                        <div class="bt-shut-spec-item">
+                            <div class="bt-shut-icon"><i class="fa-solid fa-water"></i></div>
+                            <div class="bt-shut-spec-text">
+                                <h5>100% Waterproof</h5>
+                                <p>BWP Grade Bonding</p>
+                            </div>
+                        </div>
+
+                        <div class="bt-shut-spec-item">
+                            <div class="bt-shut-icon"><i class="fa-solid fa-weight-hanging"></i></div>
+                            <div class="bt-shut-spec-text">
+                                <h5>High Density</h5>
+                                <p>34 kg+ Weight (12mm)</p>
+                            </div>
+                        </div>
+
+                        <div class="bt-shut-spec-item">
+                            <div class="bt-shut-icon"><i class="fa-solid fa-gem"></i></div>
+                            <div class="bt-shut-spec-text">
+                                <h5>Mirror Finish</h5>
+                                <p>Smooth Concrete Surface</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="bt-shut-btn-group">
+                        <a href="#" class="bt-shut-btn-primary">
+                            Get Best Price
+                        </a>
+                        <a href="#" class="bt-shut-btn-outline">
+                            View Tech Specs
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- SINGLE PRODUCT SECTION END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- WHY CHOOSE US SECTION (Premium Light) -->
+    <section class="bt-why-section" id="bt_why_us">
+        <div class="container">
+
+            <!-- Header -->
+            <div class="bt-why-header" data-aos="fade-up">
+                <span class="bt-why-subtitle">// THE CORE STRENGTH</span>
+                <h2 class="bt-why-title">Why <span>Black Tiger?</span></h2>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bt-why-card">
+                        <span class="bt-why-bg-num">01</span>
+                        <div class="bt-why-icon-box"><i class="fa-solid fa-layer-group"></i></div>
+                        <h3 class="bt-why-card-title">4-Press Technology</h3>
+                        <p class="bt-why-card-desc">Advanced Quad-Press manufacturing ensures uniform bonding and zero
+                            core gaps.</p>
+                        <div class="bt-why-line"></div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bt-why-card">
+                        <span class="bt-why-bg-num">02</span>
+                        <div class="bt-why-icon-box"><i class="fa-solid fa-shield-virus"></i></div>
+                        <h3 class="bt-why-card-title">Termite Assassin</h3>
+                        <p class="bt-why-card-desc">Chemically treated with our proprietary formula to kill pests
+                            instantly.</p>
+                        <div class="bt-why-line"></div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bt-why-card">
+                        <span class="bt-why-bg-num">03</span>
+                        <div class="bt-why-icon-box"><i class="fa-solid fa-dumbbell"></i></div>
+                        <h3 class="bt-why-card-title">Iron Density</h3>
+                        <p class="bt-why-card-desc">Selected hardwood timber for unmatched load-bearing capacity.</p>
+                        <div class="bt-why-line"></div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bt-why-card">
+                        <span class="bt-why-bg-num">04</span>
+                        <div class="bt-why-icon-box"><i class="fa-solid fa-leaf"></i></div>
+                        <h3 class="bt-why-card-title">Eco Core</h3>
+                        <p class="bt-why-card-desc">Sourced from sustainable forests with zero-emission adhesives.</p>
+                        <div class="bt-why-line"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- GALLERY SECTION START -->
+    <section class="bt-gal-section" id="bt_gallery">
+        <div class="container">
+
+            <!-- Header -->
+            <div class="bt-gal-header" data-aos="fade-up">
+                <span class="bt-gal-subtitle">// OUR MASTERPIECES</span>
+                <h2 class="bt-gal-title">Gallery of <span>Perfection</span></h2>
+            </div>
+
+            <!-- Cinematic Grid -->
+            <div class="bt-gal-grid">
+
+                <!-- Item 1 (Tall - Portrait) -->
+                <div class="bt-gal-item bt-gal-item-tall" data-aos="fade-up" onclick="openModal(this)">
+                    <img src="assets/images/gallery/gal-1.jpeg"
+                        alt="Luxury Living" class="bt-gal-img">
+                    <div class="bt-gal-overlay">
+                        <div class="bt-gal-expand"><i class="fa-solid fa-expand"></i></div>
+                        <div class="bt-gal-info">
+                            <span class="bt-gal-tag">Living Room</span>
+                            <h3 class="bt-gal-name">The Velvet Lounge</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 (Standard) -->
+                <div class="bt-gal-item" data-aos="fade-up" data-aos-delay="100" onclick="openModal(this)">
+                    <img src="assets/images/gallery/gal-2.jpeg"
+                        alt="Kitchen" class="bt-gal-img">
+                    <div class="bt-gal-overlay">
+                        <div class="bt-gal-expand"><i class="fa-solid fa-expand"></i></div>
+                        <div class="bt-gal-info">
+                            <span class="bt-gal-tag">Kitchen</span>
+                            <h3 class="bt-gal-name">Matte Finish Modular</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 (Standard) -->
+                <div class="bt-gal-item" data-aos="fade-up" data-aos-delay="200" onclick="openModal(this)">
+                    <img src="assets/images/gallery/gal-3.jpeg"
+                        alt="Furniture" class="bt-gal-img">
+                    <div class="bt-gal-overlay">
+                        <div class="bt-gal-expand"><i class="fa-solid fa-expand"></i></div>
+                        <div class="bt-gal-info">
+                            <span class="bt-gal-tag">Furniture</span>
+                            <h3 class="bt-gal-name">Scandinavian Chair</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 (Wide - Landscape) -->
+                <div class="bt-gal-item bt-gal-item-wide" data-aos="fade-up" data-aos-delay="300"
+                    onclick="openModal(this)">
+                    <img src="assets/images/gallery/gal-4.jpeg"
+                        alt="Office" class="bt-gal-img">
+                    <div class="bt-gal-overlay">
+                        <div class="bt-gal-expand"><i class="fa-solid fa-expand"></i></div>
+                        <div class="bt-gal-info">
+                            <span class="bt-gal-tag">Commercial</span>
+                            <h3 class="bt-gal-name">Executive Suite</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- GALLERY SECTION END -->
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="galleryModal" class="bt-gal-modal">
+        <span class="bt-gal-close" onclick="closeModal()">&times;</span>
+        <img class="bt-gal-modal-content" id="modalImage">
+    </div>
+    <script>
+        AOS.init();
+
+        // Modal Logic
+        function openModal(element) {
+            var modal = document.getElementById("galleryModal");
+            var modalImg = document.getElementById("modalImage");
+            // Find the image inside the clicked item
+            var img = element.querySelector('.bt-gal-img');
+
+            modal.style.display = "flex"; // Use flex to center
+            modalImg.src = img.src;
+            document.body.style.overflow = "hidden"; // Prevent scrolling
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("galleryModal");
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; // Re-enable scrolling
+        }
+
+        // Close modal if clicking outside the image
+        window.onclick = function (event) {
+            var modal = document.getElementById("galleryModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- TESTIMONIALS SECTION START (Unique ID & Classes) -->
+    <section class="bt-pro-testi-section" id="bt_pro_testimonials">
+        <div class="bt-pro-testi-bg-circle"></div>
+
+        <div class="container">
+
+            <!-- Header -->
+            <div class="bt-pro-testi-header" data-aos="fade-down">
+                <span class="bt-pro-testi-subtitle">// SUCCESS STORIES</span>
+                <h2 class="bt-pro-testi-title">Trusted by <span>Experts</span></h2>
+            </div>
+
+            <!-- Custom Slider Wrapper -->
+            <div class="bt-pro-testi-carousel-wrapper" data-aos="fade-up">
+
+                <div class="bt-pro-testi-track" id="btProTrack">
+
+                    <!-- Slide 1 (Desktop: 2 Cards) -->
+                    <div class="bt-pro-testi-slide bt-active">
+                        <div class="row">
+                            <!-- Review 1 -->
+                            <div class="col-lg-6">
+                                <div class="bt-pro-testi-card">
+                                    <div class="bt-pro-testi-img-wrap">
+                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop"
+                                            alt="Client" class="bt-pro-testi-img">
+                                    </div>
+                                    <div class="bt-pro-testi-content">
+                                        <i class="fa-solid fa-quote-left bt-pro-testi-quote"></i>
+                                        <p class="bt-pro-testi-review">
+                                            "Black Tiger Plywood has been a game-changer for our luxury projects. The
+                                            core density is fantastic, and we've had zero termite issues in 5 years."
+                                        </p>
+                                        <div class="bt-pro-testi-author">
+                                            <h4>Rajesh Verma</h4>
+                                            <span>Senior Architect</span>
+                                            <div class="bt-pro-testi-stars">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Review 2 -->
+                            <div class="col-lg-6 d-none d-lg-block">
+                                <div class="bt-pro-testi-card">
+                                    <div class="bt-pro-testi-img-wrap">
+                                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&auto=format&fit=crop"
+                                            alt="Client" class="bt-pro-testi-img">
+                                    </div>
+                                    <div class="bt-pro-testi-content">
+                                        <i class="fa-solid fa-quote-left bt-pro-testi-quote"></i>
+                                        <p class="bt-pro-testi-review">
+                                            "The finish quality of their Flush Doors is superior. It cuts down my labor
+                                            time significantly. Highly recommended for interior designers."
+                                        </p>
+                                        <div class="bt-pro-testi-author">
+                                            <h4>Anjali Mehra</h4>
+                                            <span>Interior Designer</span>
+                                            <div class="bt-pro-testi-stars">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 (Desktop: Next 2 Cards) -->
+                    <div class="bt-pro-testi-slide">
+                        <div class="row">
+                            <!-- Review 3 -->
+                            <div class="col-lg-6">
+                                <div class="bt-pro-testi-card">
+                                    <div class="bt-pro-testi-img-wrap">
+                                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop"
+                                            alt="Client" class="bt-pro-testi-img">
+                                    </div>
+                                    <div class="bt-pro-testi-content">
+                                        <i class="fa-solid fa-quote-left bt-pro-testi-quote"></i>
+                                        <p class="bt-pro-testi-review">
+                                            "Strongest core I have seen in this price range. Nail holding capacity is
+                                            excellent for structural furniture work."
+                                        </p>
+                                        <div class="bt-pro-testi-author">
+                                            <h4>Vikram Singh</h4>
+                                            <span>Project Manager</span>
+                                            <div class="bt-pro-testi-stars">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star-half-stroke"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Review 4 -->
+                            <div class="col-lg-6 d-none d-lg-block">
+                                <div class="bt-pro-testi-card">
+                                    <div class="bt-pro-testi-img-wrap">
+                                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop"
+                                            alt="Client" class="bt-pro-testi-img">
+                                    </div>
+                                    <div class="bt-pro-testi-content">
+                                        <i class="fa-solid fa-quote-left bt-pro-testi-quote"></i>
+                                        <p class="bt-pro-testi-review">
+                                            "We switched to Black Tiger for all our commercial projects. The marine ply
+                                            is genuinely waterproof and lasts long."
+                                        </p>
+                                        <div class="bt-pro-testi-author">
+                                            <h4>Priya Desai</h4>
+                                            <span>Architect</span>
+                                            <div class="bt-pro-testi-stars">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button class="bt-pro-testi-btn bt-pro-testi-prev" onclick="changeSlide(-1)">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="bt-pro-testi-btn bt-pro-testi-next" onclick="changeSlide(1)">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <!-- Custom Dots -->
+                <div class="bt-pro-testi-dots">
+                    <div class="bt-pro-testi-dot bt-active" onclick="goToSlide(0)"></div>
+                    <div class="bt-pro-testi-dot" onclick="goToSlide(1)"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- TESTIMONIALS SECTION END -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- CUSTOM SLIDER SCRIPT -->
+    <script>
+        AOS.init();
+
+        let btCurrentSlideIndex = 0;
+        const btSlides = document.querySelectorAll('.bt-pro-testi-slide');
+        const btDots = document.querySelectorAll('.bt-pro-testi-dot');
+
+        function showSlide(index) {
+            // Loop functionality
+            if (index >= btSlides.length) btCurrentSlideIndex = 0;
+            else if (index < 0) btCurrentSlideIndex = btSlides.length - 1;
+            else btCurrentSlideIndex = index;
+
+            // Remove active class from all
+            btSlides.forEach(slide => slide.classList.remove('bt-active'));
+            btDots.forEach(dot => dot.classList.remove('bt-active'));
+
+            // Add active class to current
+            btSlides[btCurrentSlideIndex].classList.add('bt-active');
+            btDots[btCurrentSlideIndex].classList.add('bt-active');
+        }
+
+        function changeSlide(direction) {
+            showSlide(btCurrentSlideIndex + direction);
+        }
+
+        function goToSlide(index) {
+            showSlide(index);
+        }
+
+        // Auto Play
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000);
+    </script>
+
+
+
+
+
+
+
+
+    <!-- JOIN NETWORK SECTION -->
+    <section class="bt-join-section" id="bt_join_network">
+        <div class="bt-join-overlay"></div>
+
+        <div class="container">
+            <div class="bt-join-content-wrapper">
+
+                <!-- Left Content (Revamped) -->
+                <div class="bt-join-text-col" data-aos="fade-right">
+                    <span class="bt-join-pre-title">Grow With Us</span>
+                    <h2 class="bt-join-title">
+                        Build Your <span>Empire</span>
+                    </h2>
+                    <p class="bt-join-desc">
+                        Partner with India's fastest-growing plywood brand. We don't just supply material; we supply the
+                        foundation for your business growth with high margins and premium branding.
+                    </p>
+
+                    <!-- New Benefits Grid Cards -->
+                    <div class="bt-join-benefits-grid">
+
+                        <!-- Benefit 1 -->
+                        <div class="bt-join-benefit-card">
+                            <i class="fa-solid fa-chart-line bt-join-card-icon"></i>
+                            <div>
+                                <h5 class="bt-join-card-title">High ROI</h5>
+                                <span class="bt-join-card-sub">Maximize your profits</span>
+                            </div>
+                        </div>
+
+                        <!-- Benefit 2 -->
+                        <div class="bt-join-benefit-card">
+                            <i class="fa-solid fa-bullhorn bt-join-card-icon"></i>
+                            <div>
+                                <h5 class="bt-join-card-title">Marketing</h5>
+                                <span class="bt-join-card-sub">360° Brand Support</span>
+                            </div>
+                        </div>
+
+                        <!-- Benefit 3 -->
+                        <div class="bt-join-benefit-card">
+                            <i class="fa-solid fa-truck-fast bt-join-card-icon"></i>
+                            <div>
+                                <h5 class="bt-join-card-title">Fast Delivery</h5>
+                                <span class="bt-join-card-sub">48hr Dispatch</span>
+                            </div>
+                        </div>
+
+                        <!-- Benefit 4 -->
+                        <div class="bt-join-benefit-card">
+                            <i class="fa-solid fa-handshake bt-join-card-icon"></i>
+                            <div>
+                                <h5 class="bt-join-card-title">Transparency</h5>
+                                <span class="bt-join-card-sub">Direct Factory Price</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right Form -->
+                <div class="bt-join-form-col" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bt-join-form-card">
+                        <div class="bt-join-form-header">
+                            <h3>Dealership Enquiry</h3>
+                            <p style="color:rgba(255,255,255,0.5); font-size: 0.9rem;">Fill the form to get a callback
+                            </p>
+                        </div>
+                        <form>
+                            <div class="bt-join-input-wrap">
+                                <input type="text" class="bt-join-input" placeholder="Full Name" required>
+                            </div>
+                            <div class="bt-join-input-wrap">
+                                <input type="tel" class="bt-join-input" placeholder="Phone Number" required>
+                            </div>
+                            <div class="bt-join-input-wrap">
+                                <input type="email" class="bt-join-input" placeholder="Email Address">
+                            </div>
+                            <div class="bt-join-input-wrap">
+                                <input type="text" class="bt-join-input" placeholder="City / State">
+                            </div>
+                            <button type="submit" class="bt-join-submit">
+                                Apply For Dealership
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- FOOTER SECTION START -->
+    <footer class="bt-footer-section" id="bt_footer">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- Column 1: Brand Info -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <img src="assets/images/logo/logo.png" alt="Black Tiger" class="bt-footer-logo-img">
+                    <p class="bt-footer-desc">
+                        Black Tiger Plywood is synonymous with strength and durability. We manufacture premium grade
+                        plywood, block boards, and flush doors engineered for generations.
+                    </p>
+                    <div class="bt-footer-socials">
+                        <a href="#" class="bt-footer-social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="bt-footer-social-btn"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="bt-footer-social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="bt-footer-social-btn"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="bt-footer-title">Quick Links</h4>
+                    <ul class="bt-footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Products</a></li>
+                        <li><a href="#">Quality Policy</a></li>
+                        <li><a href="#">Inspiration Gallery</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact Info -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="bt-footer-title">Head Office</h4>
+
+                    <div class="bt-footer-contact-item">
+                        <i class="fa-solid fa-location-dot bt-footer-icon"></i>
+                        <div class="bt-footer-contact-text">
+                            <h5>Address</h5>
+                            <p>123, Industrial Area, Phase-2,<br>New Delhi, India - 110020</p>
+                        </div>
+                    </div>
+
+                    <div class="bt-footer-contact-item">
+                        <i class="fa-solid fa-phone bt-footer-icon"></i>
+                        <div class="bt-footer-contact-text">
+                            <h5>Call Us</h5>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+
+                    <div class="bt-footer-contact-item">
+                        <i class="fa-solid fa-envelope bt-footer-icon"></i>
+                        <div class="bt-footer-contact-text">
+                            <h5>Email</h5>
+                            <p>info@blacktiger.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 4: Newsletter -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bt-footer-newsletter-box">
+                        <h4 class="bt-footer-title" style="font-size: 1.1rem; margin-bottom: 15px;">Newsletter</h4>
+                        <p class="bt-footer-news-text">Subscribe to get updates on new products and dealership
+                            opportunities.</p>
+                        <form>
+                            <div class="bt-footer-input-group">
+                                <input type="email" class="bt-footer-input" placeholder="Your Email">
+                                <button type="submit" class="bt-footer-submit"><i
+                                        class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Copyright Bar -->
+        <div class="bt-footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="mb-0">&copy; 2025 Black Tiger Plywood. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bt-footer-bottom-links">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms & Conditions</a>
+                            <a href="#">Sitemap</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+
+
+
+
+
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            once: true,          // ek hi baar chale
+            duration: 1200,      // animation slow (ms)
+            easing: 'ease-in-out',
+            offset: 120,         // thoda pehle start ho
+        });
+
+        // Navbar Scroll Effect
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 40) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Custom Mobile Menu Toggle Logic
+        function toggleMenu() {
+            const menu = document.getElementById('mobileOverlay');
+            if (menu.classList.contains('active')) {
+                menu.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            } else {
+                menu.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+    </script>
+</body>
+
+</html>
