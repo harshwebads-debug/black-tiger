@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Tiger Plywood | Strongest Friend</title>
+
+    <!-- 1. Google Fonts: 'Montserrat' (Premium & Stylish) + 'Manrope' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- 2. Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 3. FontAwesome 6 (Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- 4. AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/logo.png" type="image/x-icon">
+
+    <style>
+        /* =========================================
+           1. ABOUT HERO SECTION (Premium Edition)
+        ========================================= */
+        .bt-abp-hero {
+            position: relative;
+            width: 100%;
+            height: 75vh;
+            min-height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('assets/images/banners/abt-banner.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--color-white);
+            text-align: center;
+        }
+
+        /* Sexy Cinematic Gradient Overlay */
+        .bt-abp-hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(10, 10, 10, 0.95) 0%, rgba(10, 10, 10, 0.7) 50%, rgba(227, 30, 36, 0.3) 100%);
+            z-index: 1;
+        }
+
+        .bt-abp-hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 0 20px;
+        }
+
+        .bt-abp-hero-tag {
+            display: inline-block;
+            background: rgba(227, 30, 36, 0.15);
+            color: var(--color-red);
+            border: 1px solid rgba(227, 30, 36, 0.4);
+            padding: 8px 25px;
+            font-size: 0.85rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 25px;
+            border-radius: 50px;
+            backdrop-filter: blur(5px);
+        }
+
+        .bt-abp-hero-title {
+            font-size: 4.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            line-height: 1.1;
+            text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Gradient Text Effect */
+        .bt-abp-hero-title span {
+            background: linear-gradient(to right, #ffffff, #E31E24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        /* =========================================
+           2. THE LEGACY SECTION (Modern & Clean)
+        ========================================= */
+        .bt-abp-legacy {
+            padding: 120px 0;
+            background-color: var(--color-white);
+            position: relative;
+        }
+
+        /* Image Composition */
+        .bt-abp-legacy-images {
+            position: relative;
+            padding-right: 40px;
+            padding-bottom: 40px;
+        }
+
+        .bt-abp-img-main {
+            width: 90%;
+            border-radius: 8px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+            position: relative;
+            z-index: 2;
+            transition: transform 0.5s ease;
+        }
+
+        .bt-abp-legacy-images:hover .bt-abp-img-main {
+            transform: translateY(-10px);
+        }
+
+        .bt-abp-img-pattern {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 150px;
+            height: 150px;
+            background-image: radial-gradient(var(--color-red) 2px, transparent 2px);
+            background-size: 15px 15px;
+            z-index: 1;
+            opacity: 0.2;
+        }
+
+        /* Glassmorphism Experience Box */
+        .bt-abp-exp-box {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--color-white);
+            padding: 40px;
+            text-align: center;
+            z-index: 3;
+            border-left: 6px solid var(--color-red);
+            border-radius: 4px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            transition: transform 0.5s ease;
+        }
+
+        .bt-abp-legacy-images:hover .bt-abp-exp-box {
+            transform: scale(1.05);
+        }
+
+        .bt-abp-exp-box h3 {
+            font-size: 4rem;
+            font-weight: 900;
+            color: var(--color-red);
+            margin: 0;
+            line-height: 1;
+            text-shadow: 0 0 20px rgba(227, 30, 36, 0.4);
+        }
+
+        .bt-abp-exp-box p {
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin: 10px 0 0 0;
+            color: #ddd;
+        }
+
+        /* Legacy Content */
+        .bt-abp-legacy-content {
+            padding-left: 40px;
+        }
+
+        .bt-abp-heading {
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--color-black);
+            line-height: 1.2;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .bt-abp-heading span {
+            color: var(--color-red);
+        }
+
+        .bt-abp-text {
+            font-size: 1.15rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .bt-abp-highlight-text {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-black);
+            border-left: 4px solid var(--color-red);
+            background: linear-gradient(to right, rgba(227, 30, 36, 0.05), transparent);
+            padding: 20px;
+            margin: 30px 0;
+            font-style: italic;
+            border-radius: 0 8px 8px 0;
+        }
+
+        /* =========================================
+           3. MISSION & VISION (Dark Glass Theme)
+        ========================================= */
+        .bt-abp-mv-section {
+            padding: 120px 0;
+            background: linear-gradient(135deg, #050505 0%, #151515 100%);
+            color: var(--color-white);
+            position: relative;
+        }
+
+        .bt-abp-mv-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 50px 40px;
+            height: 100%;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Red glow corner */
+        .bt-abp-mv-card::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 150px;
+            height: 150px;
+            background: var(--color-red);
+            filter: blur(60px);
+            opacity: 0.2;
+            transition: 0.5s ease;
+        }
+
+        .bt-abp-mv-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(227, 30, 36, 0.3);
+            box-shadow: 0 20px 50px rgba(227, 30, 36, 0.15);
+        }
+
+        .bt-abp-mv-card:hover::before {
+            opacity: 0.5;
+        }
+
+        .bt-abp-mv-icon {
+            font-size: 3.5rem;
+            color: var(--color-red);
+            margin-bottom: 25px;
+            transition: 0.4s ease;
+            position: relative;
+            z-index: 2;
+        }
+
+        .bt-abp-mv-card:hover .bt-abp-mv-icon {
+            transform: scale(1.1);
+            text-shadow: 0 10px 20px rgba(227, 30, 36, 0.5);
+        }
+
+        .bt-abp-mv-title {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 2;
+        }
+
+        .bt-abp-mv-desc {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.1rem;
+            line-height: 1.7;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* =========================================
+           4. CORE VALUES SECTION (Hover Glow Edition)
+        ========================================= */
+        .bt-abp-values-section {
+            padding: 120px 0;
+            background-color: var(--color-gray);
+        }
+
+        .bt-abp-section-title-center {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .bt-abp-section-title-center h2 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: var(--color-black);
+            letter-spacing: -1px;
+        }
+
+        .bt-abp-section-title-center span {
+            color: var(--color-red);
+        }
+
+        .bt-abp-value-box {
+            background: var(--color-white);
+            padding: 40px 30px;
+            text-align: center;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 0, 0, 0.03);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            height: 100%;
+        }
+
+        .bt-abp-value-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 25px auto;
+            background: rgba(227, 30, 36, 0.05);
+            /* Soft red bg */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: var(--color-red);
+            transition: all 0.4s ease;
+        }
+
+        .bt-abp-value-box:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(227, 30, 36, 0.1);
+            border-color: rgba(227, 30, 36, 0.2);
+        }
+
+        .bt-abp-value-box:hover .bt-abp-value-icon {
+            background: var(--color-red);
+            color: var(--color-white);
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(227, 30, 36, 0.3);
+        }
+
+        .bt-abp-value-title {
+            font-size: 1.3rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            color: var(--color-black);
+        }
+
+        .bt-abp-value-desc {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 991px) {
+            .bt-abp-hero-title {
+                font-size: 3rem;
+            }
+
+            .bt-abp-legacy-content {
+                padding-left: 0;
+                margin-top: 50px;
+            }
+
+            .bt-abp-legacy-images {
+                padding-right: 0;
+            }
+
+            .bt-abp-heading {
+                font-size: 2.2rem;
+            }
+
+            .bt-abp-section-title-center h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .bt-abp-hero {
+                background-attachment: scroll;
+            }
+
+            .bt-abp-hero-title {
+                font-size: 2.5rem;
+            }
+
+            .bt-abp-exp-box {
+                padding: 25px;
+            }
+
+            .bt-abp-exp-box h3 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+   <!-- 1. SLEEK TOP BAR -->
+    <div class="top-bar">
+        <div class="container-fluid px-5 d-flex justify-content-between align-items-center">
+            <div class="contact-info">
+                <span class="me-4"><i class="fa-solid fa-phone"></i> +91 70079 01540</span>
+                <span><i class="fa-solid fa-envelope"></i> sales@blacktiger.com</span>
+            </div>
+            <div class="social-icons d-none d-lg-block">
+                <a
+                    href="https://www.instagram.com/blacktigerplywood/?fbclid=IwY2xjawP6l41leHRuA2FlbQIxMQBicmlkETFTWHdueXFhZnVjOFBISE5vc3J0YwZhcHBfaWQBMAABHtafaWaiNgaCUhD5RFGdB3PSuyJ1GG3KRu5kQD5H08oug0PGJIPg0jUsu7h3_aem_mVlKjifotdL071DGx3HqFA"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61586313652134"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. POWER NAVBAR -->
+    <div class="sticky-wrapper">
+        <nav class="navbar navbar-expand-lg" id="mainNavbar">
+            <div class="navbar-container">
+
+                <!-- LEFT: LOGO -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo/logo.png" alt="Black Tiger Plywood" class="logo-img">
+                </a>
+
+                <!-- RIGHT: DESKTOP MENU & CTA -->
+                <div class="collapse navbar-collapse" id="navbarDesktop">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button">Products</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="shutterig-plywood.html">Premium Shuttering Plywood</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- RIGHT: CLEAN CTA BUTTON -->
+                <div class="d-none d-lg-block ms-4">
+                    <a href="contact-us.html" class="btn-primary-custom">
+                        Get Quote <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+
+                <!-- RIGHT: HAMBURGER (Mobile Only) -->
+                <button class="custom-toggler" type="button" onclick="toggleMenu()" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+
+            </div>
+        </nav>
+    </div>
+
+    <!-- CUSTOM FULLSCREEN MOBILE OVERLAY -->
+    <div id="mobileOverlay" class="custom-mobile-menu">
+        <button class="close-menu-btn" onclick="toggleMenu()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <span style="display:none"></span>
+
+        <a href="index.html" class="mobile-link active-page">Home</a>
+        <a href="about-us.html" class="mobile-link">About Us</a>
+        <a href="shutterig-plywood.html" class="mobile-link">Our Products</a>
+        <a href="blogs.html" class="mobile-link">Blogs</a>
+        <a href="contact-us.html" class="mobile-link">Contact Us</a>
+
+        <div class="mt-5 mobile-link">
+            <a href="contact-us.html" class="btn-primary-custom border-white">
+                Get a Quote
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- =====================================
+         1. HERO SECTION 
+    ====================================== -->
+    <section class="bt-abp-hero">
+        <div class="bt-abp-hero-overlay"></div>
+        <div class="bt-abp-hero-content" data-aos="zoom-in" data-aos-duration="1000">
+            <span class="bt-abp-hero-tag">The Story of Strength</span>
+            <h1 class="bt-abp-hero-title">Who <span>We Are</span></h1>
+            <p class="bt-abp-text"
+                style="color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto; font-size: 1.2rem;">
+                Pioneering quality and innovation in the plywood industry to build spaces that last generations.
+            </p>
+        </div>
+    </section>
+
+    <!-- =====================================
+         2. THE LEGACY SECTION
+    ====================================== -->
+    <section class="bt-abp-legacy">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left: Images -->
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="bt-abp-legacy-images">
+                        <div class="bt-abp-img-pattern"></div>
+                        <img src="assets/images/about-us/abt-page-lft.jpeg"
+                            alt="Plywood Manufacturing" class="bt-abp-img-main">
+
+                        <div class="bt-abp-exp-box">
+                            <h3>25+</h3>
+                            <p>Years of<br>Excellence</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Content -->
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="bt-abp-legacy-content">
+                        <h2 class="bt-abp-heading">Building Trust, <br>One Layer at a <span>Time.</span></h2>
+                        <p class="bt-abp-text">
+                            Founded with a vision to redefine durability in interiors, Black Tiger Plywood has grown
+                            into one of India's most trusted manufacturing brands. Our journey started with a simple
+                            belief: <strong>Quality should never be compromised.</strong>
+                        </p>
+
+                        <p class="bt-abp-highlight-text">
+                            "We don't just manufacture wood products; we engineer peace of mind for every home and
+                            commercial space."
+                        </p>
+
+                        <p class="bt-abp-text">
+                            Today, our state-of-the-art facilities utilize advanced Quad-Press technology and
+                            sustainably sourced timber to create BWP and MR grade plywood, Block Boards, and Flush Doors
+                            that stand the test of time, termites, and weather.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================
+         3. MISSION & VISION
+    ====================================== -->
+    <section class="bt-abp-mv-section">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- Mission -->
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="bt-abp-mv-card">
+                        <i class="fa-solid fa-bullseye bt-abp-mv-icon"></i>
+                        <h3 class="bt-abp-mv-title">Our Mission</h3>
+                        <p class="bt-abp-mv-desc">
+                            To consistently deliver premium, uncompromised, and technologically advanced wood products
+                            that empower architects, builders, and homeowners to create structural masterpieces without
+                            worrying about durability.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Vision -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bt-abp-mv-card">
+                        <i class="fa-solid fa-eye bt-abp-mv-icon"></i>
+                        <h3 class="bt-abp-mv-title">Our Vision</h3>
+                        <p class="bt-abp-mv-desc">
+                            To be the undisputed leader in the Indian plywood industry, recognized globally for our
+                            commitment to sustainable manufacturing, unparalleled quality standards, and absolute
+                            customer satisfaction.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================
+         4. CORE VALUES
+    ====================================== -->
+    <section class="bt-abp-values-section">
+        <div class="container">
+            <div class="bt-abp-section-title-center" data-aos="fade-down">
+                <h2>Our Core <span>Values</span></h2>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Value 1 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bt-abp-value-box">
+                        <div class="bt-abp-value-icon">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <h4 class="bt-abp-value-title">Quality First</h4>
+                        <p class="bt-abp-value-desc">Rigorous testing at every stage of manufacturing ensures a flawless
+                            final product.</p>
+                    </div>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bt-abp-value-box">
+                        <div class="bt-abp-value-icon">
+                            <i class="fa-solid fa-handshake-angle"></i>
+                        </div>
+                        <h4 class="bt-abp-value-title">Integrity</h4>
+                        <p class="bt-abp-value-desc">Honesty and transparency form the foundation of our relationships
+                            with partners.</p>
+                    </div>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bt-abp-value-box">
+                        <div class="bt-abp-value-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <h4 class="bt-abp-value-title">Sustainability</h4>
+                        <p class="bt-abp-value-desc">We are committed to eco-friendly practices and ethically sourced
+                            raw materials.</p>
+                    </div>
+                </div>
+
+                <!-- Value 4 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bt-abp-value-box">
+                        <div class="bt-abp-value-icon">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <h4 class="bt-abp-value-title">Innovation</h4>
+                        <p class="bt-abp-value-desc">Continuously upgrading our technology to provide the most advanced
+                            wood solutions.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER SECTION START -->
+    <footer class="bt-footer-section" id="bt_footer">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- Column 1: Brand Info -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <img src="assets/images/logo/logo.png" alt="Black Tiger" class="bt-footer-logo-img">
+                    <p class="bt-footer-desc">
+                        Black Tiger Plywood is synonymous with strength and durability. We manufacture premium grade
+                        plywood, block boards, and flush doors engineered for generations.
+                    </p>
+                    <div class="bt-footer-socials">
+                        <a href="#" class="bt-footer-social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="bt-footer-social-btn"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="bt-footer-social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="bt-footer-social-btn"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="bt-footer-title">Quick Links</h4>
+                    <ul class="bt-footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Products</a></li>
+                        <li><a href="#">Quality Policy</a></li>
+                        <li><a href="#">Inspiration Gallery</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact Info -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="bt-footer-title">Head Office</h4>
+
+                    <div class="bt-footer-contact-item">
+                        <i class="fa-solid fa-location-dot bt-footer-icon"></i>
+                        <div class="bt-footer-contact-text">
+                            <h5>Address</h5>
+                            <p>123, Industrial Area, Phase-2,<br>New Delhi, India - 110020</p>
+                        </div>
+                    </div>
+
+                    <div class="bt-footer-contact-item">
+                        <i class="fa-solid fa-phone bt-footer-icon"></i>
+                        <div class="bt-footer-contact-text">
+                            <h5>Call Us</h5>
+                            <p>+91 70079 01540</p>
+                        </div>
+                    </div>
+
+                    <div class="bt-footer-contact-item">
+                        <i class="fa-solid fa-envelope bt-footer-icon"></i>
+                        <div class="bt-footer-contact-text">
+                            <h5>Email</h5>
+                            <p>info@blacktiger.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 4: Newsletter -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bt-footer-newsletter-box">
+                        <h4 class="bt-footer-title" style="font-size: 1.1rem; margin-bottom: 15px;">Newsletter</h4>
+                        <p class="bt-footer-news-text">Subscribe to get updates on new products and dealership
+                            opportunities.</p>
+                        <form>
+                            <div class="bt-footer-input-group">
+                                <input type="email" class="bt-footer-input" placeholder="Your Email">
+                                <button type="submit" class="bt-footer-submit"><i
+                                        class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Copyright Bar -->
+        <div class="bt-footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="mb-0">&copy; 2025 Black Tiger Plywood. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bt-footer-bottom-links">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms & Conditions</a>
+                            <a href="#">Sitemap</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+
+
+
+
+
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            once: true,          // ek hi baar chale
+            duration: 1200,      // animation slow (ms)
+            easing: 'ease-in-out',
+            offset: 120,         // thoda pehle start ho
+        });
+
+        // Navbar Scroll Effect
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 40) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Custom Mobile Menu Toggle Logic
+        function toggleMenu() {
+            const menu = document.getElementById('mobileOverlay');
+            if (menu.classList.contains('active')) {
+                menu.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            } else {
+                menu.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -24,6 +24,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/logo.png" type="image/x-icon">
+
     <style>
 
     </style>
@@ -39,9 +42,11 @@
                 <span><i class="fa-solid fa-envelope"></i> sales@blacktiger.com</span>
             </div>
             <div class="social-icons d-none d-lg-block">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a
+                    href="https://www.instagram.com/blacktigerplywood/?fbclid=IwY2xjawP6l41leHRuA2FlbQIxMQBicmlkETFTWHdueXFhZnVjOFBISE5vc3J0YwZhcHBfaWQBMAABHtafaWaiNgaCUhD5RFGdB3PSuyJ1GG3KRu5kQD5H08oug0PGJIPg0jUsu7h3_aem_mVlKjifotdL071DGx3HqFA"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61586313652134"><i
+                        class="fa-brands fa-facebook-f"></i></a>
             </div>
         </div>
     </div>
@@ -52,31 +57,34 @@
             <div class="navbar-container">
 
                 <!-- LEFT: LOGO -->
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="assets/images/logo/logo.png" alt="Black Tiger Plywood" class="logo-img">
                 </a>
 
                 <!-- RIGHT: DESKTOP MENU & CTA -->
                 <div class="collapse navbar-collapse" id="navbarDesktop">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button">Products</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Premium Plywood</a></li>
-                                <li><a class="dropdown-item" href="#">Block Boards</a></li>
-                                <li><a class="dropdown-item" href="#">Flush Doors</a></li>
+                                <li><a class="dropdown-item" href="shutterig-plywood.html">Premium Shuttering
+                                        Plywood</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#">Quality</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </div>
 
                 <!-- RIGHT: CLEAN CTA BUTTON -->
                 <div class="d-none d-lg-block ms-4">
-                    <a href="#" class="btn-primary-custom">
+                    <a href="contact-us.html" class="btn-primary-custom">
                         Get Quote <i class="fa-solid fa-arrow-right ms-2"></i>
                     </a>
                 </div>
@@ -100,14 +108,14 @@
 
         <span style="display:none"></span>
 
-        <a href="#" class="mobile-link active-page">Home</a>
-        <a href="#" class="mobile-link">About Us</a>
-        <a href="#" class="mobile-link">Our Products</a>
-        <a href="#" class="mobile-link">Quality</a>
-        <a href="#" class="mobile-link">Contact</a>
+        <a href="index.html" class="mobile-link active-page">Home</a>
+        <a href="about-us.html" class="mobile-link">About Us</a>
+        <a href="shutterig-plywood.html" class="mobile-link">Our Products</a>
+        <a href="blogs.html" class="mobile-link">Blogs</a>
+        <a href="contact-us.html" class="mobile-link">Contact Us</a>
 
         <div class="mt-5 mobile-link">
-            <a href="#" class="btn-primary-custom border-white">
+            <a href="contact-us.html" class="btn-primary-custom border-white">
                 Get a Quote
             </a>
         </div>
@@ -157,8 +165,7 @@
         <!-- SLIDE 2 -->
         <div class="bt-modern-slide" data-index="1">
             <div class="bt-modern-img-container">
-                <img src="assets/images/banners/home-ban-2.jpg"
-                    alt="Slide 2" class="bt-modern-main-img">
+                <img src="assets/images/banners/home-ban-2.jpg" alt="Slide 2" class="bt-modern-main-img">
             </div>
             <div class="bt-modern-overlay"></div>
 
@@ -180,8 +187,7 @@
         <!-- SLIDE 3 -->
         <div class="bt-modern-slide" data-index="2">
             <div class="bt-modern-img-container">
-                <img src="assets/images/banners/home-ban-3.jpg"
-                    alt="Slide 3" class="bt-modern-main-img">
+                <img src="assets/images/banners/home-ban-3.jpg" alt="Slide 3" class="bt-modern-main-img">
             </div>
             <div class="bt-modern-overlay"></div>
 
@@ -203,16 +209,13 @@
         <!-- THUMBNAILS NAV -->
         <div class="bt-modern-thumbs">
             <div class="bt-modern-thumb-item bt-mod-active" onclick="btModManualChange(0)">
-                <img src="assets/images/banners/home-ban-1.jpg"
-                    alt="Thumb 1">
+                <img src="assets/images/banners/home-ban-1.jpg" alt="Thumb 1">
             </div>
             <div class="bt-modern-thumb-item" onclick="btModManualChange(1)">
-                <img src="assets/images/banners/home-ban-2.jpg"
-                    alt="Thumb 2">
+                <img src="assets/images/banners/home-ban-2.jpg" alt="Thumb 2">
             </div>
             <div class="bt-modern-thumb-item" onclick="btModManualChange(2)">
-                <img src="assets/images/banners/home-ban-3.jpg"
-                    alt="Thumb 3">
+                <img src="assets/images/banners/home-ban-3.jpg" alt="Thumb 3">
             </div>
         </div>
 
@@ -282,8 +285,8 @@
                 <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
                     <div class="bt-about-image-wrapper">
                         <!-- Using a generic plywood/carpentry image -->
-                        <img src="assets/images/about-us/abt-img.jpeg"
-                            alt="Black Tiger Quality" class="bt-about-main-image">
+                        <img src="assets/images/about-us/abt-img.jpeg" alt="Black Tiger Quality"
+                            class="bt-about-main-image">
 
                         <!-- Experience Badge -->
                         <div class="bt-about-exp-badge">
@@ -642,8 +645,7 @@
 
                 <!-- Item 1 (Tall - Portrait) -->
                 <div class="bt-gal-item bt-gal-item-tall" data-aos="fade-up" onclick="openModal(this)">
-                    <img src="assets/images/gallery/gal-1.jpeg"
-                        alt="Luxury Living" class="bt-gal-img">
+                    <img src="assets/images/gallery/gal-1.jpeg" alt="Luxury Living" class="bt-gal-img">
                     <div class="bt-gal-overlay">
                         <div class="bt-gal-expand"><i class="fa-solid fa-expand"></i></div>
                         <div class="bt-gal-info">
@@ -655,8 +657,7 @@
 
                 <!-- Item 2 (Standard) -->
                 <div class="bt-gal-item" data-aos="fade-up" data-aos-delay="100" onclick="openModal(this)">
-                    <img src="assets/images/gallery/gal-2.jpeg"
-                        alt="Kitchen" class="bt-gal-img">
+                    <img src="assets/images/gallery/gal-2.jpeg" alt="Kitchen" class="bt-gal-img">
                     <div class="bt-gal-overlay">
                         <div class="bt-gal-expand"><i class="fa-solid fa-expand"></i></div>
                         <div class="bt-gal-info">
@@ -668,8 +669,7 @@
 
                 <!-- Item 3 (Standard) -->
                 <div class="bt-gal-item" data-aos="fade-up" data-aos-delay="200" onclick="openModal(this)">
-                    <img src="assets/images/gallery/gal-3.jpeg"
-                        alt="Furniture" class="bt-gal-img">
+                    <img src="assets/images/gallery/gal-3.jpeg" alt="Furniture" class="bt-gal-img">
                     <div class="bt-gal-overlay">
                         <div class="bt-gal-expand"><i class="fa-solid fa-expand"></i></div>
                         <div class="bt-gal-info">
@@ -682,8 +682,7 @@
                 <!-- Item 4 (Wide - Landscape) -->
                 <div class="bt-gal-item bt-gal-item-wide" data-aos="fade-up" data-aos-delay="300"
                     onclick="openModal(this)">
-                    <img src="assets/images/gallery/gal-4.jpeg"
-                        alt="Office" class="bt-gal-img">
+                    <img src="assets/images/gallery/gal-4.jpeg" alt="Office" class="bt-gal-img">
                     <div class="bt-gal-overlay">
                         <div class="bt-gal-expand"><i class="fa-solid fa-expand"></i></div>
                         <div class="bt-gal-info">
@@ -898,8 +897,7 @@
     </section>
     <!-- TESTIMONIALS SECTION END -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
     <!-- CUSTOM SLIDER SCRIPT -->
     <script>
@@ -1182,6 +1180,8 @@
                 document.body.style.overflow = 'hidden';
             }
         }
+
+
     </script>
 </body>
 

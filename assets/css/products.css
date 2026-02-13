@@ -1,0 +1,546 @@
+  /* --- ROOT VARIABLES --- */
+  :root {
+      --color-black: #111111;
+      --color-red: #D9232D;
+      --color-gray-light: #F4F5F7;
+      --color-white: #ffffff;
+      --font-main: 'Manrope', sans-serif;
+      --font-headings: 'Montserrat', sans-serif;
+      --transition-smooth: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  /* --- GLOBAL RESETS --- */
+  body {
+      font-family: var(--font-main);
+      background-color: var(--color-gray-light);
+      color: var(--color-black);
+      overflow-x: hidden;
+      padding-top: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .btn-primary-custom {
+      font-family: var(--font-headings);
+  }
+
+
+
+  /* =========================================
+           1. PRODUCT HERO SECTION
+        ========================================= */
+  .bt-sp-hero {
+      position: relative;
+      width: 100%;
+      height: 60vh;
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1920&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: var(--color-white);
+      text-align: center;
+  }
+
+  .bt-sp-hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(10, 10, 10, 0.8) 0%, rgba(10, 10, 10, 0.95) 100%);
+      z-index: 1;
+  }
+
+  .bt-sp-hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 20px;
+  }
+
+  .bt-sp-breadcrumbs {
+      margin-bottom: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: rgba(255, 255, 255, 0.6);
+  }
+
+  .bt-sp-breadcrumbs a {
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      transition: 0.3s;
+  }
+
+  .bt-sp-breadcrumbs a:hover {
+      color: var(--color-red);
+  }
+
+  .bt-sp-hero-title {
+      font-size: 4.5rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      line-height: 1.1;
+      letter-spacing: -1px;
+      text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .bt-sp-hero-title span {
+      color: var(--color-red);
+  }
+
+  /* =========================================
+           2. PRODUCT OVERVIEW SECTION
+        ========================================= */
+  .bt-sp-overview {
+      padding: 100px 0;
+      background-color: var(--color-white);
+  }
+
+  /* Image Side */
+  .bt-sp-img-col {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      /* Reduced padding to allow bigger image */
+  }
+
+  .bt-sp-main-img-wrapper {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+  }
+
+  .bt-sp-backdrop {
+      position: absolute;
+      width: 85%;
+      /* Increased width */
+      height: 90%;
+      /* Increased height */
+      background-color: #1a1a1a;
+      top: 5%;
+      left: 8%;
+      z-index: 0;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+  }
+
+  .bt-sp-product-img {
+      position: relative;
+      width: 100%;
+      /* Full width of the column */
+      max-width: 600px;
+      /* Increased max constraint */
+      z-index: 2;
+      filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.4));
+      animation: floatUpDown 5s ease-in-out infinite;
+      transform-origin: center center;
+      object-fit: contain;
+      /* Ensure it doesn't get cropped */
+  }
+
+  @keyframes floatUpDown {
+
+      0%,
+      100% {
+          transform: translateY(0px) scale(1);
+      }
+
+      50% {
+          transform: translateY(-15px) scale(1.02);
+      }
+  }
+
+  /* Thumbnails Styling */
+  .bt-sp-thumbnails {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      z-index: 2;
+  }
+
+  .bt-sp-thumb {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      border: 3px solid transparent;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      background: #fff;
+  }
+
+  .bt-sp-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .bt-sp-thumb:hover {
+      transform: translateY(-5px);
+  }
+
+  .bt-sp-thumb.bt-active {
+      border-color: var(--color-red);
+      transform: translateY(-5px);
+      box-shadow: 0 15px 25px rgba(227, 30, 36, 0.2);
+  }
+
+  /* Content Side */
+  .bt-sp-tag {
+      display: inline-block;
+      background: rgba(227, 30, 36, 0.1);
+      color: var(--color-red);
+      padding: 6px 15px;
+      font-size: 0.85rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      border-left: 3px solid var(--color-red);
+  }
+
+  .bt-sp-heading {
+      font-size: 3rem;
+      font-weight: 900;
+      color: var(--color-black);
+      line-height: 1.1;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+  }
+
+  .bt-sp-desc {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 30px;
+  }
+
+  .bt-sp-highlight-box {
+      background: var(--color-gray);
+      border-left: 4px solid var(--color-red);
+      padding: 20px;
+      margin-bottom: 40px;
+      border-radius: 0 4px 4px 0;
+  }
+
+  .bt-sp-highlight-box p {
+      margin: 0;
+      font-weight: 700;
+      color: var(--color-black);
+      font-size: 1.05rem;
+  }
+
+  /* Buttons */
+  .bt-sp-btn-group {
+      display: flex;
+      gap: 20px;
+  }
+
+  .bt-sp-btn-primary {
+      background-color: var(--color-red);
+      color: var(--color-white);
+      padding: 16px 40px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-decoration: none;
+      transition: 0.3s;
+      position: relative;
+      overflow: hidden;
+      border: 2px solid var(--color-red);
+  }
+
+  .bt-sp-btn-primary:hover {
+      background-color: transparent;
+      color: var(--color-red);
+  }
+
+  .bt-sp-btn-outline {
+      background-color: transparent;
+      color: var(--color-black);
+      padding: 16px 40px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-decoration: none;
+      transition: 0.3s;
+      border: 2px solid var(--color-black);
+  }
+
+  .bt-sp-btn-outline:hover {
+      background-color: var(--color-black);
+      color: var(--color-white);
+  }
+
+  /* =========================================
+           3. FEATURES SECTION (Dark)
+        ========================================= */
+  .bt-sp-features-sec {
+      padding: 100px 0;
+      background-color: var(--color-black);
+      color: var(--color-white);
+  }
+
+  .bt-sp-sec-title-center {
+      text-align: center;
+      margin-bottom: 60px;
+  }
+
+  .bt-sp-sec-title-center h2 {
+      font-size: 3rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+  }
+
+  .bt-sp-sec-title-center span {
+      color: var(--color-red);
+  }
+
+  .bt-sp-feat-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 40px 30px;
+      text-align: center;
+      border-radius: 8px;
+      transition: all 0.4s ease;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+  }
+
+  .bt-sp-feat-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: var(--color-red);
+      transform: scaleX(0);
+      transition: transform 0.4s ease;
+  }
+
+  .bt-sp-feat-card:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  }
+
+  .bt-sp-feat-card:hover::after {
+      transform: scaleX(1);
+  }
+
+  .bt-sp-feat-icon {
+      font-size: 3rem;
+      color: var(--color-red);
+      margin-bottom: 20px;
+      transition: 0.4s;
+  }
+
+  .bt-sp-feat-card:hover .bt-sp-feat-icon {
+      transform: scale(1.1);
+      text-shadow: 0 0 20px rgba(227, 30, 36, 0.5);
+  }
+
+  .bt-sp-feat-card h4 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+  }
+
+  .bt-sp-feat-card p {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.95rem;
+      margin: 0;
+  }
+
+  /* =========================================
+           4. TECHNICAL SPECIFICATIONS
+        ========================================= */
+  .bt-sp-specs-sec {
+      padding: 100px 0;
+      background-color: var(--color-gray);
+  }
+
+  .bt-sp-specs-wrapper {
+      background: var(--color-white);
+      border-radius: 8px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+  }
+
+  .bt-sp-spec-row {
+      display: flex;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      transition: 0.3s;
+  }
+
+  .bt-sp-spec-row:last-child {
+      border-bottom: none;
+  }
+
+  .bt-sp-spec-row:hover {
+      background-color: rgba(227, 30, 36, 0.03);
+  }
+
+  .bt-sp-spec-title {
+      flex: 0 0 30%;
+      padding: 25px 30px;
+      font-weight: 800;
+      color: var(--color-black);
+      background-color: rgba(0, 0, 0, 0.02);
+      text-transform: uppercase;
+      font-size: 0.95rem;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+  }
+
+  .bt-sp-spec-value {
+      flex: 1;
+      padding: 25px 30px;
+      color: #555;
+      font-size: 1rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+  }
+
+  /* =========================================
+           5. CTA / ENQUIRY SECTION
+        ========================================= */
+  .bt-sp-cta-sec {
+      padding: 100px 0;
+      background-image: linear-gradient(135deg, rgba(227, 30, 36, 0.95), rgba(150, 10, 15, 0.95)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1920&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: var(--color-white);
+  }
+
+  .bt-sp-cta-content {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+  }
+
+  .bt-sp-cta-content h2 {
+      font-size: 3.5rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+  }
+
+  .bt-sp-cta-content p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      color: rgba(255, 255, 255, 0.9);
+  }
+
+  .bt-sp-form {
+      background: var(--color-white);
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+      text-align: left;
+  }
+
+  .bt-sp-form .form-control {
+      border: 1px solid #ddd;
+      padding: 15px 20px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+  }
+
+  .bt-sp-form .form-control:focus {
+      border-color: var(--color-red);
+      box-shadow: none;
+  }
+
+  .bt-sp-form-btn {
+      width: 100%;
+      background: var(--color-black);
+      color: var(--color-white);
+      padding: 18px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border: none;
+      border-radius: 4px;
+      transition: 0.3s;
+  }
+
+  .bt-sp-form-btn:hover {
+      background: var(--color-red);
+      transform: translateY(-3px);
+  }
+
+  /* Responsive */
+  @media (max-width: 991px) {
+      .bt-sp-hero-title {
+          font-size: 3rem;
+      }
+
+      .bt-sp-heading {
+          font-size: 2.5rem;
+      }
+
+      .bt-sp-img-col {
+          margin-bottom: 50px;
+      }
+
+      .bt-sp-btn-group {
+          flex-direction: column;
+      }
+
+      .bt-sp-btn-primary,
+      .bt-sp-btn-outline {
+          text-align: center;
+          width: 100%;
+      }
+
+      .bt-sp-spec-row {
+          flex-direction: column;
+      }
+
+      .bt-sp-spec-title {
+          padding: 15px 20px;
+      }
+
+      .bt-sp-spec-value {
+          padding: 15px 20px 25px 20px;
+      }
+
+      .bt-sp-cta-content h2 {
+          font-size: 2.5rem;
+      }
+  }
+
+  @media (max-width: 768px) {
+
+      .bt-sp-hero,
+      .bt-sp-cta-sec {
+          background-attachment: scroll;
+      }
+  }
