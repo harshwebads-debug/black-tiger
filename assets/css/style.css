@@ -64,6 +64,8 @@
       transform: translateY(-2px);
   }
 
+
+
   /* --- 2. POWER NAVBAR --- */
   .navbar {
       background: rgba(255, 255, 255, 0.95);
@@ -280,6 +282,52 @@
   .custom-toggler:hover .bar {
       background-color: var(--color-red);
   }
+
+/* ============================= */
+/* RESPONSIVE NAVBAR FIX */
+/* ============================= */
+
+@media (max-width: 991px) {
+
+    /* Hide Desktop Menu */
+    .navbar-collapse,
+    .btn-primary-custom {
+        display: none !important;
+    }
+
+    /* Show Hamburger */
+    .custom-toggler {
+        display: block;
+    }
+
+    /* Adjust Navbar Height */
+    .navbar {
+        height: 75px;
+    }
+
+    .logo-img {
+        height: 60px;
+    }
+
+    /* Make Top Bar Responsive */
+    .top-bar .container-fluid {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .social-icons {
+        margin-top: 5px;
+    }
+}
+
+
 
   /* === 3. MODERN HERO SECTION STYLES (CENTERED & BALANCED) === */
   /* --- UNIQUE HERO SECTION STYLES (Prefix: bt-modern-) --- */
